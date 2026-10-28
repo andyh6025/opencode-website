@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bull Pen - Stock Market Learning Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Bull Pen</h1>
+    </header>
+
+    <main>
+        <section class="intro" aria-labelledby="intro-heading">
+            <h2 id="intro-heading" class="visually-hidden">Introduction</h2>
+            <p class="intro-text">
+                Bull Pen is a student club for learning how markets work, with no real money involved. Each semester we track a practice watchlist and talk through what moved and why.
+            </p>
+        </section>
+
+        <section class="practice-watchlist" aria-labelledby="watchlist-heading">
+            <h2 id="watchlist-heading">Practice Watchlist</h2>
+            
+            <div class="filter-group" role="group" aria-label="Filter watchlist by sector">
+                <button type="button" class="filter-btn" data-sector="All" aria-pressed="true">All</button>
+                <button type="button" class="filter-btn" data-sector="Tech" aria-pressed="false">Tech</button>
+                <button type="button" class="filter-btn" data-sector="Food" aria-pressed="false">Food</button>
+                <button type="button" class="filter-btn" data-sector="Energy" aria-pressed="false">Energy</button>
+            </div>
+
+            <div class="watchlist-grid" role="list">
+                <article class="watchlist-card" role="listitem" data-sector="Tech" aria-label="NOVA Nova Robotics stock">
+                    <div class="card-header">
+                        <h3 class="ticker">NOVA</h3>
+                        <span class="company-name">Nova Robotics</span>
+                        <span class="sector-badge">Tech</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="price">$48.20</div>
+                        <div class="weekly-change gain">+2.1% this week</div>
+                        <p class="description">Warehouse robots.</p>
+                    </div>
+                </article>
+
+                <article class="watchlist-card" role="listitem" data-sector="Tech" aria-label="PXL Pixel Lane stock">
+                    <div class="card-header">
+                        <h3 class="ticker">PXL</h3>
+                        <span class="company-name">Pixel Lane</span>
+                        <span class="sector-badge">Tech</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="price">$112.75</div>
+                        <div class="weekly-change loss">-1.4% this week</div>
+                        <p class="description">Phone camera chips.</p>
+                    </div>
+                </article>
+
+                <article class="watchlist-card" role="listitem" data-sector="Food" aria-label="BOBA Pearl Street Tea stock">
+                    <div class="card-header">
+                        <h3 class="ticker">BOBA</h3>
+                        <span class="company-name">Pearl Street Tea</span>
+                        <span class="sector-badge">Food</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="price">$23.10</div>
+                        <div class="weekly-change gain">+0.8% this week</div>
+                        <p class="description">Bubble tea chain.</p>
+                    </div>
+                </article>
+
+                <article class="watchlist-card" role="listitem" data-sector="Food" aria-label="CRST Crust &amp; Co. stock">
+                    <div class="card-header">
+                        <h3 class="ticker">CRST</h3>
+                        <span class="company-name">Crust &amp; Co.</span>
+                        <span class="sector-badge">Food</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="price">$67.40</div>
+                        <div class="weekly-change loss">-0.5% this week</div>
+                        <p class="description">Frozen pizza maker.</p>
+                    </div>
+                </article>
+
+                <article class="watchlist-card" role="listitem" data-sector="Energy" aria-label="SUNW Sunward Power stock">
+                    <div class="card-header">
+                        <h3 class="ticker">SUNW</h3>
+                        <span class="company-name">Sunward Power</span>
+                        <span class="sector-badge">Energy</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="price">$34.90</div>
+                        <div class="weekly-change gain">+3.3% this week</div>
+                        <p class="description">Rooftop solar.</p>
+                    </div>
+                </article>
+
+                <article class="watchlist-card" role="listitem" data-sector="Energy" aria-label="TIDE Tidewater Grid stock">
+                    <div class="card-header">
+                        <h3 class="ticker">TIDE</h3>
+                        <span class="company-name">Tidewater Grid</span>
+                        <span class="sector-badge">Energy</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="price">$81.15</div>
+                        <div class="weekly-change loss">-2.0% this week</div>
+                        <p class="description">Offshore wind.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="market-terms" aria-labelledby="terms-heading">
+            <h2 id="terms-heading">Market Terms for Beginners</h2>
+            <dl class="terms-list">
+                <div class="term-item">
+                    <dt>Ticker</dt>
+                    <dd>the short code a stock trades under</dd>
+                </div>
+                <div class="term-item">
+                    <dt>Sector</dt>
+                    <dd>the industry a company belongs to</dd>
+                </div>
+                <div class="term-item">
+                    <dt>Weekly change</dt>
+                    <dd>how much the price moved since last week, in percent</dd>
+                </div>
+                <div class="term-item">
+                    <dt>Diversification</dt>
+                    <dd>spreading picks across sectors so one bad week hurts less</dd>
+                </div>
+            </dl>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="disclaimer">All companies and prices are fictional and for learning only.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
